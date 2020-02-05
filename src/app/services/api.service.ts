@@ -8,13 +8,14 @@ import { IPost } from '../interfaces/IPost';
   providedIn: 'root'
 })
 export class ApiService {
-  apiUrl = 'https://www.reddit.com/r/aww/.json';
+  apiUrl: string = 'https://www.reddit.com/r/aww/.json';
+  limit: string = '?limit=10';
   
   constructor(private http: HttpClient) {
 
   }
   
   getPosts() : Observable<IPost[]> {
-    return this.http.get<IPost[]>(this.apiUrl);
+    return this.http.get<IPost[]>(this.apiUrl + this.limit);
   }
 }

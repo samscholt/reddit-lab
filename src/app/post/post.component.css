@@ -1,0 +1,28 @@
+#post-container {
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 15px;
+    overflow: auto;     /* keeps thumbnail from going outside container */
+}
+#upvote-number {
+    color: orangered;
+    font-size: 120%;
+}
+img {
+    float: left;
+    clear: both;
+    margin-right: 20px;
+}
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: right;
+    margin-top: 0.5rem;
+}
+p a {
+    text-decoration: none;
+    font-weight: bold;
+}

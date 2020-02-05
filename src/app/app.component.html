@@ -1,5 +1,8 @@
-<div>
-  <h1>It's Reddit!</h1>
+<div id="container">
+  <div class="title">
+    <h1>It's Reddit!</h1>
+    <p>...but on a budget</p>
+  </div>
 
   <app-post *ngFor="let post of postList;" [post]="post.data"></app-post>
 </div>
